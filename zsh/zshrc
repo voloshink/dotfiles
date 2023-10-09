@@ -72,6 +72,12 @@ ZSH_THEME="robbyrussell"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(git zsh-autosuggestions fast-syntax-highlighting zsh-autocomplete)
 
+# zsh zsh-autocomplete
+# use tab/shifttab to cycle through options
+bindkey '\t' menu-complete "$terminfo[kcbt]" reverse-menu-complete
+# enter to run command from menu directly
+bindkey -M menuselect '\r' .accept-line
+
 source $ZSH/oh-my-zsh.sh
 
 eval "$(/opt/homebrew/bin/brew shellenv)"
