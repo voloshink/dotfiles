@@ -72,6 +72,7 @@ ZSH_THEME="robbyrussell"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(git zsh-autosuggestions fast-syntax-highlighting zsh-autocomplete)
 
+zmodload -i zsh/complist
 # zsh zsh-autocomplete
 # use tab/shifttab to cycle through options
 bindkey '\t' menu-complete "$terminfo[kcbt]" reverse-menu-complete
