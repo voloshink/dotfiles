@@ -5,6 +5,10 @@ return {
     name = "onedark",
     opts = {
       style = "warmer",
+      transparent = true,
+      lualine = {
+        transparent = true,
+      },
       integrations = {
         alpha = true,
         cmp = true,
