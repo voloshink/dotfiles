@@ -131,6 +131,15 @@ export PATH="$PYENV_ROOT/shims:$PATH"
 
 if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
 
+# keychain credentials
+source ~/keychain-environment-variables.sh
+
+
+# nexus
+export NEXUS_USERNAME=$(keychain-environment-variable NEXUS_USERNAME); 
+export NEXUS_PASSWORD=$(keychain-environment-variable NEXUS_PASSWORD); 
+export NEXUS_AUTH_KEY=$(keychain-environment-variable NEXUS_AUTH_KEY); 
+
 
 #nvm
 export NVM_DIR="$HOME/.nvm"

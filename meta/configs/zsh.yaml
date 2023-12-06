@@ -1,2 +1,3 @@
 - link:
     $HOME/.zshrc: zsh/zshrc
+    $HOME/keychain-environment-variables.sh: zsh/keychain-environment-variables.sh
