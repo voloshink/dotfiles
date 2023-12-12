@@ -1,2 +1,3 @@
 - link:
     ~/.tmux.conf: tmux/tmux.conf
+    ~/.tmux/picnic-session: tmux/picnic-session
