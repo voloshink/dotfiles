@@ -1,4 +1,7 @@
 new -s Picnic -A -n iOS -c ~/PicnicSupermarket/picnic-ios
 neww -c ~/PicnicSupermarket/picnic-android -S -d -n Android
 neww -c ~/PicnicSupermarket/picnic-fusion -S -d -n Fusion
+neww -c ~/PicnicSupermarket/picnic-fusion -S -d -n Fusion-Metro
+neww -c ~/PicnicSupermarket/picnic-scratch -S -d -n Scratch
+neww -c ~/PicnicSupermarket -S -d -n Random
 
