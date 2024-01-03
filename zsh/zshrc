@@ -134,21 +134,11 @@ if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
 # keychain credentials
 source ~/keychain-environment-variables.sh
 
-
-# nexus
-export NEXUS_USERNAME=$(keychain-environment-variable NEXUS_USERNAME); 
-export NEXUS_PASSWORD=$(keychain-environment-variable NEXUS_PASSWORD); 
-export NEXUS_AUTH_KEY=$(keychain-environment-variable NEXUS_AUTH_KEY); 
-
-
 #nvm
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
-
-# work aliases
-alias picnic='cd ~/PicnicSupermarket'
 
 alias jdk17="sdk use java 17.0.9-tem"
 alias jdk18="sdk use java 18.0.1.1-open"
@@ -164,3 +154,5 @@ export JAVA_HOME=/Users/$USER/.sdkman/candidates/java/current
 export PATH=$PATH:$JAVA_HOME/bin
 
 export PATH=$PATH:$HOME/.maestro/bin
+
+source $HOME/.config/zsh/zsh-profile
