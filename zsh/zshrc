@@ -113,6 +113,8 @@ alias vim="nvim"
 alias p="pnpm"
 alias ls="eza --icons --classify --group-directories-first --time-style=long-iso --group --color-scale"
 alias lla="ls -la"
+alias y="yarn"
+alias ms="maestro studio"
 
 
 eval "$(starship init zsh)"
