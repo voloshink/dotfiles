@@ -4,3 +4,9 @@ export NEXUS_PASSWORD=$(keychain-environment-variable NEXUS_PASSWORD);
 export NEXUS_AUTH_KEY=$(keychain-environment-variable NEXUS_AUTH_KEY); 
 
 alias picnic='cd ~/PicnicSupermarket'
+
+export PYTHONPATH="~/PicnicSupermarket/picnic-test-automation/automated-tests"
+
+export ANDROID_HOME=$HOME/Library/Android/sdk
+
+alias bepi="bundle exec pod install"
