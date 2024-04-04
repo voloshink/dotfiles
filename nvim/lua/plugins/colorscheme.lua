@@ -1,5 +1,8 @@
 return {
   {
+    "mcchrish/zenbones.nvim",
+  },
+  {
     "navarasu/onedark.nvim",
     lazy = true,
     name = "onedark",
@@ -43,7 +46,7 @@ return {
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "onedark",
+      colorscheme = "zenwritten",
     },
   },
   {
@@ -52,4 +55,14 @@ return {
     priority = 1000,
     opts = {},
   },
+  {
+    "rktjmp/lush.nvim",
+  },
+
+  {
+    "rasmus.nvim",
+  },
+  { "zaki/zazen" },
+  { "hardselius/warlock" },
+  { "p00f/alabaster.nvim", name = "alabaster" },
 }
