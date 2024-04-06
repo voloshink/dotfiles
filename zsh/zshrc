@@ -93,6 +93,7 @@ alias ls="eza --icons --classify --group-directories-first --time-style=long-iso
 alias lla="ls -la"
 alias y="yarn"
 alias ms="maestro studio"
+alias cat="bat"
 
 
 eval "$(starship init zsh)"
