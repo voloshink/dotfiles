@@ -95,7 +95,6 @@ alias y="yarn"
 alias ms="maestro studio"
 alias cat="bat"
 
-
 eval "$(starship init zsh)"
 
 # pnpm
@@ -116,10 +115,12 @@ if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
 source ~/keychain-environment-variables.sh
 
 #nvm
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-
+#export NVM_DIR="$HOME/.nvm"
+# [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+# [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+#
+# fnm is faster nvm
+eval "$(fnm env --use-on-cd)"
 
 alias jdk17="sdk use java 17.0.9-tem"
 alias jdk18="sdk use java 18.0.1.1-open"
