@@ -164,69 +164,69 @@
 	<key>DVTSourceTextSyntaxFonts</key>
 	<dict>
 		<key>xcode.syntax.attribute</key>
-		<string>JetBrainsMonoNF-Bold - 13.0</string>
+		<string>HasklugNFM - 14.0</string>
 		<key>xcode.syntax.character</key>
-		<string>JetBrainsMonoNF-Bold - 13.0</string>
+		<string>HasklugNFM - 14.0</string>
 		<key>xcode.syntax.comment</key>
-		<string>JetBrainsMonoNF-Bold - 13.0</string>
+		<string>HasklugNFM - 14.0</string>
 		<key>xcode.syntax.comment.doc</key>
-		<string>JetBrainsMonoNF-Bold - 13.0</string>
+		<string>HasklugNFM - 14.0</string>
 		<key>xcode.syntax.comment.doc.keyword</key>
-		<string>JetBrainsMonoNF-Bold - 13.0</string>
+		<string>HasklugNFM - 14.0</string>
 		<key>xcode.syntax.declaration.other</key>
-		<string>JetBrainsMonoNF-Bold - 13.0</string>
+		<string>HasklugNFM - 14.0</string>
 		<key>xcode.syntax.declaration.type</key>
-		<string>JetBrainsMonoNF-Bold - 13.0</string>
+		<string>HasklugNFM - 14.0</string>
 		<key>xcode.syntax.identifier.class</key>
-		<string>JetBrainsMonoNF-Bold - 13.0</string>
+		<string>HasklugNFM - 14.0</string>
 		<key>xcode.syntax.identifier.class.system</key>
-		<string>JetBrainsMonoNF-Bold - 13.0</string>
+		<string>HasklugNFM - 14.0</string>
 		<key>xcode.syntax.identifier.constant</key>
-		<string>JetBrainsMonoNF-Bold - 13.0</string>
+		<string>HasklugNFM - 14.0</string>
 		<key>xcode.syntax.identifier.constant.system</key>
-		<string>JetBrainsMonoNF-Bold - 13.0</string>
+		<string>HasklugNFM - 14.0</string>
 		<key>xcode.syntax.identifier.function</key>
-		<string>JetBrainsMonoNF-Bold - 13.0</string>
+		<string>HasklugNFM - 14.0</string>
 		<key>xcode.syntax.identifier.function.system</key>
-		<string>JetBrainsMonoNF-Bold - 13.0</string>
+		<string>HasklugNFM - 14.0</string>
 		<key>xcode.syntax.identifier.macro</key>
-		<string>JetBrainsMonoNF-Bold - 13.0</string>
+		<string>HasklugNFM - 14.0</string>
 		<key>xcode.syntax.identifier.macro.system</key>
-		<string>JetBrainsMonoNF-Bold - 13.0</string>
+		<string>HasklugNFM - 14.0</string>
 		<key>xcode.syntax.identifier.type</key>
-		<string>JetBrainsMonoNF-Bold - 13.0</string>
+		<string>HasklugNFM - 14.0</string>
 		<key>xcode.syntax.identifier.type.system</key>
-		<string>JetBrainsMonoNF-Bold - 13.0</string>
+		<string>HasklugNFM - 14.0</string>
 		<key>xcode.syntax.identifier.variable</key>
-		<string>JetBrainsMonoNF-Bold - 13.0</string>
+		<string>HasklugNFM - 14.0</string>
 		<key>xcode.syntax.identifier.variable.system</key>
-		<string>JetBrainsMonoNF-Bold - 13.0</string>
+		<string>HasklugNFM - 14.0</string>
 		<key>xcode.syntax.keyword</key>
-		<string>JetBrainsMonoNF-Bold - 13.0</string>
+		<string>HasklugNFM - 14.0</string>
 		<key>xcode.syntax.mark</key>
-		<string>JetBrainsMonoNF-Bold - 13.0</string>
+		<string>HasklugNFM - 14.0</string>
 		<key>xcode.syntax.markup.code</key>
-		<string>JetBrainsMonoNF-Bold - 13.0</string>
+		<string>HasklugNFM - 14.0</string>
 		<key>xcode.syntax.number</key>
-		<string>JetBrainsMonoNF-Bold - 13.0</string>
+		<string>HasklugNFM - 14.0</string>
 		<key>xcode.syntax.plain</key>
-		<string>JetBrainsMonoNF-Bold - 13.0</string>
+		<string>HasklugNFM - 14.0</string>
 		<key>xcode.syntax.preprocessor</key>
-		<string>JetBrainsMonoNF-Bold - 13.0</string>
+		<string>HasklugNFM - 14.0</string>
 		<key>xcode.syntax.regex</key>
-		<string>JetBrainsMonoNF-Bold - 13.0</string>
+		<string>HasklugNFM - 14.0</string>
 		<key>xcode.syntax.regex.capturename</key>
-		<string>JetBrainsMonoNF-Bold - 13.0</string>
+		<string>HasklugNFM - 14.0</string>
 		<key>xcode.syntax.regex.charname</key>
-		<string>JetBrainsMonoNF-Bold - 13.0</string>
+		<string>HasklugNFM - 14.0</string>
 		<key>xcode.syntax.regex.number</key>
-		<string>JetBrainsMonoNF-Bold - 13.0</string>
+		<string>HasklugNFM - 14.0</string>
 		<key>xcode.syntax.regex.other</key>
-		<string>JetBrainsMonoNF-Bold - 13.0</string>
+		<string>HasklugNFM - 14.0</string>
 		<key>xcode.syntax.string</key>
-		<string>JetBrainsMonoNF-Bold - 13.0</string>
+		<string>HasklugNFM - 14.0</string>
 		<key>xcode.syntax.url</key>
-		<string>JetBrainsMonoNF-Bold - 13.0</string>
+		<string>HasklugNFM - 14.0</string>
 	</dict>
 </dict>
 </plist>
