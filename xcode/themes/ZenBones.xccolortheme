@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>DVTSourceTextBackground</key>
+    <string>#1C1917</string>
+    <key>DVTSourceTextInsertionPoint</key>
+    <string>#C4CACF</string>
+    <key>DVTSourceTextColor</key>
+    <string>#B4BDC3</string>
+    <key>DVTSourceTextBlockComment</key>
+    <string>#6E6763</string>
+    <key>DVTSourceTextDocumentationComment</key>
+    <string>#6E6763</string>
+    <key>DVTSourceTextDocumentationCommentKeyword</key>
+    <string>#8D9499</string>
+    <key>DVTSourceTextSyntaxColors</key>
+    <dict>
+        <key>xcode.syntax.identifier</key>
+        <string>#979FA4</string>
+        <key>xcode.syntax.keyword</key>
+        <string>#B4BDC3</string>
+        <key>xcode.syntax.string</key>
+        <string>#B4BDC3</string>
+        <key>xcode.syntax.type</key>
+        <string>#A1938C</string>
+        <key>xcode.syntax.comment</key>
+        <string>#6E6763</string>
+        <key>xcode.syntax.preprocessor</key>
+        <string>#B4BDC3</string>
+        <key>xcode.syntax.function</key>
+        <string>#B4BDC3</string>
+        <key>xcode.syntax.error</key>
+        <string>#DE6E7C</string>
+    </dict>
+    <key>DVTFontAndColorVersion</key>
+    <integer>1</integer>
+    <key>DVTSourceTextSyntaxFonts</key>
+    <dict>
+        <key>xcode.syntax.identifier</key>
+        <string>SFMono-Regular - 12.0</string>
+        <key>xcode.syntax.keyword</key>
+        <string>SFMono-Regular - 12.0</string>
+        <key>xcode.syntax.string</key>
+        <string>SFMono-Regular - 12.0</string>
+        <key>xcode.syntax.type</key>
+        <string>SFMono-Regular - 12.0</string>
+        <key>xcode.syntax.comment</key>
+        <string>SFMono-Regular - 12.0</string>
+        <key>xcode.syntax.preprocessor</key>
+        <string>SFMono-Regular - 12.0</string>
+        <key>xcode.syntax.function</key>
+        <string>SFMono-Regular - 12.0</string>
+        <key>xcode.syntax.error</key>
+        <string>SFMono-Bold - 12.0</string>
+    </dict>
+</dict>
+</plist>
