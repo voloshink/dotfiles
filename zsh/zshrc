@@ -74,6 +74,9 @@ ZSH_THEME="robbyrussell"
 #
 # zsh-autocomplete breaks zoxide atm
 plugins=(git zsh-autosuggestions fast-syntax-highlighting)
+plugins+=(zsh-vi-mode)
+
+export EDITOR="nvim"
 
 zmodload -i zsh/complist
 # zsh zsh-autocomplete
