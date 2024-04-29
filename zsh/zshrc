@@ -76,6 +76,9 @@ ZSH_THEME="robbyrussell"
 plugins=(git zsh-autosuggestions fast-syntax-highlighting)
 plugins+=(zsh-vi-mode)
 
+# to prevent breaking fzf keybinds
+ZVM_INIT_MODE=sourcing
+
 export EDITOR="nvim"
 
 zmodload -i zsh/complist
