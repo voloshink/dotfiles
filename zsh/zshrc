@@ -146,6 +146,8 @@ export PATH=$PATH:$JAVA_HOME/bin
 
 export PATH=$PATH:$HOME/.maestro/bin
 
+export PATH=$PATH:$HOME/.local/bin 
+
 eval "$(zoxide init --cmd cd zsh)"
 
 source $HOME/.config/zsh/zsh-profile
