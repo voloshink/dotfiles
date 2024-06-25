@@ -58,10 +58,6 @@ return {
   {
     "rktjmp/lush.nvim",
   },
-
-  {
-    "rasmus.nvim",
-  },
   { "zaki/zazen" },
   { "hardselius/warlock" },
   { "p00f/alabaster.nvim", name = "alabaster" },
