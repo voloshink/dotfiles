@@ -1,3 +1,4 @@
 - link:
     $HOME/.zshrc: zsh/zshrc
     $HOME/keychain-environment-variables.sh: zsh/keychain-environment-variables.sh
+    $HOME/nnn-cd-on-quit: zsh/nnn-cd-on-quit

@@ -151,4 +151,9 @@ export PATH=$PATH:$HOME/.local/bin
 
 eval "$(zoxide init --cmd cd zsh)"
 
+# nnn cd on quit script
+if [ -f $HOME/nnn-cd-on-quit ]; then
+    source $HOME/nnn-cd-on-quit
+fi
+
 source $HOME/.config/zsh/zsh-profile
