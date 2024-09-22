@@ -3,6 +3,6 @@
 -- Add any additional keymaps here
 local map = vim.keymap.set
 map("n", "<C-d>", "<C-d>zz", { remap = true })
-map("n", "<C-d>", "<C-d>zz", { remap = true })
+map("n", "<C-u>", "<C-u>zz", { remap = true })
 map("n", "n", "nzzzv", { remap = true })
 map("n", "N", "Nzzzv", { remap = true })
