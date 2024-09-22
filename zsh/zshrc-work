@@ -3,6 +3,12 @@ export NEXUS_USERNAME=$(keychain-environment-variable NEXUS_USERNAME);
 export NEXUS_PASSWORD=$(keychain-environment-variable NEXUS_PASSWORD); 
 export NEXUS_AUTH_KEY=$(keychain-environment-variable NEXUS_AUTH_KEY); 
 
+export KEYSTORE_ENCRYPTION_KEY=$(keychain-environment-variable KEYSTORE_ENCRYPTION_KEY);
+export KEYSTORE_PASSWORD=$(keychain-environment-variable KEYSTORE_PASSWORD);
+export KEYSTORE_ALIAS=$(keychain-environment-variable KEYSTORE_ALIAS);
+export KEYSTORE_UPLOAD_ALIAS=$(keychain-environment-variable KEYSTORE_UPLOAD_ALIAS);
+export KEYSTORE_UPLOAD_PASSWORD=$(keychain-environment-variable KEYSTORE_UPLOAD_PASSWORD);
+
 alias picnic='cd ~/PicnicSupermarket'
 
 export PYTHONPATH="~/PicnicSupermarket/picnic-test-automation/automated-tests"
