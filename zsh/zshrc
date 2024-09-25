@@ -92,6 +92,8 @@ source $ZSH/oh-my-zsh.sh
 
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
+export PATH=~/bin:$PATH
+
 alias lg="lazygit"
 alias vim="nvim"
 alias p="pnpm"
@@ -100,6 +102,8 @@ alias lla="ls -la"
 alias y="yarn"
 alias ms="maestro studio"
 alias cat="bat"
+alias oo="cd $HOME/obsidian/personal-vault"
+alias or='vim $HOME/obsidian/personal-vault/inbox/*.md'
 
 eval "$(starship init zsh)"
 
