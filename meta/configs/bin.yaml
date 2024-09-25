@@ -1,0 +1,4 @@
+- link:
+    $HOME/bin: bin
+- shell:
+    - [chmod +x $HOME/bin/*]
