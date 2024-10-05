@@ -7,11 +7,16 @@ map("n", "<C-u>", "<C-u>zz", { remap = true })
 map("n", "n", "nzzzv", { remap = true })
 map("n", "N", "Nzzzv", { remap = true })
 
--- creates a note from the template
-map("n", "<leader>on", ":ObsidianTemplate note<cr> :lua vim.cmd([[1,/^\\S/s/^\\n\\{1,}//]])<cr>")
--- removes timestamps from line and converts underscores to spaces, just a utility for obsidian note titles
-map("n", "<leader>of", ':s/\\(# \\)[^_]*_/\\1/e | s/-/ /ge | let @/ = ""<cr>')
--- review workflow
+--  Obsidian
+map(
+  "n",
+  "<leader>on",
+  ":ObsidianTemplate note<cr> :lua vim.cmd([[1,/^\\S/s/^\\n\\{1,}//]])<cr>",
+  { desc = "insert note tempalte" }
+)
+
+map("n", "<leader>of", ':s/\\(# \\)[^_]*_/\\1/e | s/-/ /ge | let @/ = ""<cr>', { desc = "format note" })
+
 map("n", "<leader>ok", function()
   local file = vim.fn.expand("%:p")
   if file == "" then
