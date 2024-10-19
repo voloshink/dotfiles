@@ -10,10 +10,12 @@ map("n", "N", "Nzzzv", { remap = true })
 --  Obsidian
 map(
   "n",
-  "<leader>on",
+  "<leader>ot",
   ":ObsidianTemplate note<cr> :lua vim.cmd([[1,/^\\S/s/^\\n\\{1,}//]])<cr>",
   { desc = "insert note tempalte" }
 )
+
+map("n", "<leader>on", ":ObsidianNew<cr><cr>", { desc = "new note" })
 
 map("n", "<leader>of", ':s/\\(# \\)[^_]*_/\\1/e | s/-/ /ge | let @/ = ""<cr>', { desc = "format note" })
 
