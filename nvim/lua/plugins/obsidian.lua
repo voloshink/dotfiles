@@ -22,6 +22,12 @@ return {
       time_format = "%H:%M:%S",
     },
 
+    daily_notes = {
+      folder = "notes/daily_notes",
+      default_tags = { "daily-notes" },
+      template = "note.md",
+    },
+
     mappings = {
       ["gf"] = {
         action = function()
