@@ -161,3 +161,5 @@ if [ -f $HOME/nnn-cd-on-quit ]; then
 fi
 
 source $HOME/.config/zsh/zsh-profile
+export LDFLAGS="-L/opt/homebrew/opt/libffi/lib"
+export CPPFLAGS="-I/opt/homebrew/opt/libffi/include"
