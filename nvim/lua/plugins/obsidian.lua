@@ -15,7 +15,7 @@ return {
       },
     },
 
-    notes_subdir = "notes",
+    notes_subdir = "notes/zk",
     new_notes_location = "notes_subdir",
 
     disable_frontmatter = true,
