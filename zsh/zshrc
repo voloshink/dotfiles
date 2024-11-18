@@ -109,6 +109,7 @@ alias oo="cd $OBSIDIAN_PERSONAL_VAULT"
 alias or='vim $OBSIDIAN_PERSONAL_VAULT/inbox/*.md'
 alias t="tmux"
 alias ti="tmuxinator"
+alias mvndFast="mvnd -T 2.0C clean install -Dstyle.color=always -DskipTests -Dverification.skip -Dmaven.build.cache.enabled=false"
 
 eval "$(starship init zsh)"
 
