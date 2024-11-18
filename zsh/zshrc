@@ -94,6 +94,9 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 
 export PATH=~/bin:$PATH
 
+export OBSIDIAN_HOME="$HOME/obsidian"
+export OBSIDIAN_PERSONAL_VAULT="$OBSIDINA_HOME/personal-vault"
+
 alias lg="lazygit"
 alias vim="nvim"
 alias p="pnpm"
@@ -102,8 +105,8 @@ alias lla="ls -la"
 alias y="yarn"
 alias ms="maestro studio"
 alias cat="bat"
-alias oo="cd $HOME/obsidian/personal-vault"
-alias or='vim $HOME/obsidian/personal-vault/inbox/*.md'
+alias oo="cd $OBSIDIAN_PERSONAL_VAULT"
+alias or='vim $OBSIDIAN_PERSONAL_VAULT/inbox/*.md'
 alias t="tmux"
 alias ti="tmuxinator"
 
