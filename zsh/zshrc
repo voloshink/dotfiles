@@ -104,6 +104,8 @@ alias ms="maestro studio"
 alias cat="bat"
 alias oo="cd $HOME/obsidian/personal-vault"
 alias or='vim $HOME/obsidian/personal-vault/inbox/*.md'
+alias t="tmux"
+alias ti="tmuxinator"
 
 eval "$(starship init zsh)"
 
