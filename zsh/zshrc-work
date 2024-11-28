@@ -9,6 +9,9 @@ export KEYSTORE_ALIAS=$(keychain-environment-variable KEYSTORE_ALIAS);
 export KEYSTORE_UPLOAD_ALIAS=$(keychain-environment-variable KEYSTORE_UPLOAD_ALIAS);
 export KEYSTORE_UPLOAD_PASSWORD=$(keychain-environment-variable KEYSTORE_UPLOAD_PASSWORD);
 
+export AWS_PROFILE=picnic-artifacts
+alias docker="AWS_PROFILE=picnic-artifacts docker"
+
 alias picnic='cd ~/PicnicSupermarket'
 
 export PYTHONPATH="~/PicnicSupermarket/picnic-test-automation/automated-tests"
@@ -16,3 +19,5 @@ export PYTHONPATH="~/PicnicSupermarket/picnic-test-automation/automated-tests"
 export ANDROID_HOME=$HOME/Library/Android/sdk
 
 alias bepi="bundle exec pod install"
+
+alias ecrAuth="aws sso login --profile picnic-artifacts"
