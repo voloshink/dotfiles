@@ -142,7 +142,7 @@ eval "$(fnm env --use-on-cd)"
 alias jdk11="sdk use java 11.0.21-tem"
 alias jdk17="sdk use java 17.0.9-tem"
 alias jdk18="sdk use java 18.0.1.1-open"
-alias jdk21="sdk use 21.0.2-graalce"
+alias jdk21="sdk use java 21.0.2-tem"
 
 # Ruby
 eval "$(rbenv init -)"
