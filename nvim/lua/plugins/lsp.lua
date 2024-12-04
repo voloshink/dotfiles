@@ -12,6 +12,14 @@ return {
           },
         },
       },
+      ts_ls = {
+        init_options = {
+          preferences = {
+            importModuleSpecifierPreference = "relative",
+            importModuleSpecifierEnding = "minimal",
+          },
+        },
+      },
     },
   },
 }
