@@ -74,7 +74,7 @@ ZSH_THEME="robbyrussell"
 #
 # zsh-autocomplete breaks zoxide atm
 plugins=(git zsh-autosuggestions fast-syntax-highlighting)
-plugins+=(zsh-vi-mode)
+# plugins+=(zsh-vi-mode)
 
 # to prevent breaking fzf keybinds
 ZVM_INIT_MODE=sourcing
