@@ -8,5 +8,6 @@ auto_command_on({ "BufRead", "BufNewFile" }, {
   command = "set filetype=ruby",
 })
 
+vim.g.snacks_animate = false
 -- vim.opt.foldexpr = "v:lua.vim.treesitter.foldexpr()"
 -- vim.opt.foldmethod = "expr"
