@@ -9,5 +9,6 @@ auto_command_on({ "BufRead", "BufNewFile" }, {
 })
 
 vim.g.snacks_animate = false
+vim.go.background = "dark"
 -- vim.opt.foldexpr = "v:lua.vim.treesitter.foldexpr()"
 -- vim.opt.foldmethod = "expr"
