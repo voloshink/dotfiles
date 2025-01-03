@@ -111,7 +111,6 @@ alias or='vim $OBSIDIAN_PERSONAL_VAULT/inbox/*.md'
 alias t="tmux"
 alias ti="tmuxinator"
 alias mvndFast="mvnd -T 2.0C clean install -Dstyle.color=always -DskipTests -Dverification.skip -Dmaven.build.cache.enabled=false"
-alias yz="yazi"
 
 eval "$(starship init zsh)"
 
@@ -166,3 +165,12 @@ eval "$(zoxide init --cmd cd zsh)"
 source $HOME/.config/zsh/zsh-profile
 export LDFLAGS="-L/opt/homebrew/opt/libffi/lib"
 export CPPFLAGS="-I/opt/homebrew/opt/libffi/include"
+
+function yz() {
+	local tmp="$(mktemp -t "yazi-cwd.XXXXXX")" cwd
+	yazi "$@" --cwd-file="$tmp"
+	if cwd="$(command cat -- "$tmp")" && [ -n "$cwd" ] && [ "$cwd" != "$PWD" ]; then
+		builtin cd -- "$cwd"
+	fi
+	rm -f -- "$tmp"
+}
