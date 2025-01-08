@@ -46,7 +46,7 @@ return {
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "forestbones",
+      colorscheme = "tokyonight-moon",
     },
   },
   {
@@ -61,4 +61,5 @@ return {
   { "zaki/zazen" },
   { "hardselius/warlock" },
   { "p00f/alabaster.nvim", name = "alabaster" },
+  { "Mofiqul/vscode.nvim" },
 }
