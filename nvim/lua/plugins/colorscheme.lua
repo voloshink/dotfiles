@@ -62,4 +62,5 @@ return {
   { "hardselius/warlock" },
   { "p00f/alabaster.nvim", name = "alabaster" },
   { "Mofiqul/vscode.nvim" },
+  { "jackplus-xyz/binary.nvim" },
 }
