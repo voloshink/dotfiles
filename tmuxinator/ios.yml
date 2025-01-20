@@ -1,0 +1,5 @@
+name: ios
+root: ~/PicnicSupermarket/picnic-ios
+
+windows:
+  - ios: ~
