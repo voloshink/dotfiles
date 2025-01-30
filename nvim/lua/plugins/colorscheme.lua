@@ -1,5 +1,11 @@
 return {
   {
+    "LazyVim/LazyVim",
+    opts = {
+      colorscheme = "tokyonight-moon",
+    },
+  },
+  {
     "mcchrish/zenbones.nvim",
   },
   {
@@ -44,12 +50,6 @@ return {
     },
   },
   {
-    "LazyVim/LazyVim",
-    opts = {
-      colorscheme = "tokyonight-moon",
-    },
-  },
-  {
     "folke/tokyonight.nvim",
     lazy = false,
     priority = 1000,
@@ -63,4 +63,5 @@ return {
   { "p00f/alabaster.nvim", name = "alabaster" },
   { "Mofiqul/vscode.nvim" },
   { "jackplus-xyz/binary.nvim" },
+  { "ellisonleao/gruvbox.nvim", priority = 1000, config = true, opts = { contrast = "hard" } },
 }
