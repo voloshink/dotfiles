@@ -20,4 +20,5 @@ export ANDROID_HOME=$HOME/Library/Android/sdk
 
 alias bepi="bundle exec pod install"
 
-alias ecrAuth="aws sso login --profile picnic-artifacts"
+alias awsAuth="aws sso login --profile picnic-artifacts"
+alias ecrAuth="aws ecr get-login-password --region eu-west-1 --profile picnic-artifacts | docker login --username AWS --password-stdin 008971659647.dkr.ecr.eu-west-1.amazonaws.com"
