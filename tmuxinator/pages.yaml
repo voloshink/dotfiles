@@ -3,7 +3,7 @@ name: pages
 root: ~/PicnicSupermarket/picnic-store-config/pages/
 
 windows:
-  - nvim: nvim .
+  - nvim: nvim
   - test-server: yarn test-server:start
   - test: yarn test -w
   - commands: ~

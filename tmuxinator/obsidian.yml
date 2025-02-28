@@ -2,4 +2,4 @@ name: obsidian
 root: ~/obsidian/personal-vault/
 
 windows:
-  - nvim: nvim .
+  - nvim: nvim

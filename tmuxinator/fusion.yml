@@ -2,5 +2,5 @@ name: fusion
 root: ~/PicnicSupermarket/picnic-fusion/
 
 windows:
-  - nvim: nvim .
+  - nvim: nvim
   - yarn: yarn start
