@@ -22,4 +22,16 @@ return {
       },
     },
   },
+  -- config = function(_, opts)
+  --   local lspconfig = require("lspconfig")
+  --   lspconfig.sourcekit.setup({
+  --     capabilities = {
+  --       workspace = {
+  --         didChangeWatchedFiles = {
+  --           dynamicRegistration = true,
+  --         },
+  --       },
+  --     },
+  --   })
+  -- end,
 }
