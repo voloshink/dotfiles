@@ -9,5 +9,9 @@ return {
       ["<Left>"] = {},
       ["<Right>"] = {},
     },
+    restricted_keys = {
+      ["j"] = {},
+      ["k"] = {},
+    },
   },
 }
