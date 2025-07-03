@@ -161,7 +161,7 @@ export PATH=$PATH:$HOME/.maestro/bin
 
 export PATH=$PATH:$HOME/.local/bin 
 
-eval "$(zoxide init --cmd cd zsh)"
+eval "$(zoxide init zsh)"
 
 source $HOME/.config/zsh/zsh-profile
 export LDFLAGS="-L/opt/homebrew/opt/libffi/lib"
