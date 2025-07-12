@@ -8,3 +8,11 @@ vim.api.nvim_create_autocmd("FileType", {
   group = augroup,
   command = "compiler tsc | setlocal makeprg=npx\\ tsc",
 })
+
+-- Treat Fastlane Fastfiles as Ruby files
+local fastlane_augroup = vim.api.nvim_create_augroup("fastlane", { clear = true })
+vim.api.nvim_create_autocmd({ "BufRead", "BufNewFile" }, {
+  pattern = { "Fastfile", "Appfile", "Deliverfile", "Matchfile", "Snapfile", "Scanfile", "Gymfile" },
+  group = fastlane_augroup,
+  command = "set filetype=ruby",
+})
