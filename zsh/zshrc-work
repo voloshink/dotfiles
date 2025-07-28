@@ -10,6 +10,8 @@ export KEYSTORE_UPLOAD_ALIAS=$(keychain-environment-variable KEYSTORE_UPLOAD_ALI
 export KEYSTORE_UPLOAD_PASSWORD=$(keychain-environment-variable KEYSTORE_UPLOAD_PASSWORD);
 
 export AWS_PROFILE=picnic-artifacts
+export AWS_ACCESS_KEY_ID=$(keychain-environment-variable AWS_ACCESS_KEY_ID);
+export AWS_SECRET_ACCESS_KEY=$(keychain-environment-variable AWS_SECRET_ACCESS_KEY);
 alias docker="AWS_PROFILE=picnic-artifacts docker"
 
 alias picnic='cd ~/PicnicSupermarket'
