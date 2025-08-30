@@ -1,0 +1,154 @@
+tap "hookdeck/hookdeck"
+tap "jesseduffield/lazygit"
+tap "macos-fuse-t/cask"
+tap "peripheryapp/periphery"
+# General-purpose data compression with high compression ratio
+brew "xz"
+# C library implementing the SSH2 protocol
+brew "libssh2"
+# C library of Git core methods that is re-entrant and linkable
+brew "libgit2"
+# Clone of cat(1) with syntax highlighting and Git integration
+brew "bat"
+# High performance key/value database
+brew "berkeley-db"
+# Collection of portable C++ source libraries
+brew "boost"
+# Resource monitor. C++ version and continuation of bashtop and bpytop
+brew "btop"
+# Cross-platform make
+brew "cmake"
+# Dependency manager for Cocoa projects
+brew "cocoapods"
+# Tool for downloading RTMP streaming media
+brew "rtmpdump"
+# Get a file from an HTTP, HTTPS or FTP server
+brew "curl"
+# Asynchronous event library
+brew "libevent"
+# Collection of reusable C++ library artifacts developed at Facebook
+brew "folly"
+# C++14 implementation of the TLS-1.3 standard
+brew "fizz"
+# Modular, composable client/server abstractions framework
+brew "wangle"
+# Facebook's branch of Apache Thrift, including a new C++ server
+brew "fbthrift"
+# Thrift functions for querying information from a service
+brew "fb303"
+# Shared library for Watchman and Eden projects
+brew "edencommon"
+# Command-line tool to interact with exercism.io
+brew "exercism"
+# Modern, maintained replacement for ls
+brew "eza"
+# Simple, fast and user-friendly alternative to find
+brew "fd"
+# Validating, recursive, caching DNS resolver
+brew "unbound"
+# GNU Transport Layer Security (TLS) Library
+brew "gnutls"
+# C library SSHv1/SSHv2 client and server protocols
+brew "libssh"
+# Fast and simple Node.js version manager
+brew "fnm"
+# Command-line fuzzy finder written in Go
+brew "fzf"
+# GitHub command-line tool
+brew "gh"
+# Enable transparent encryption/decryption of files in a git repo
+brew "git-crypt"
+# Syntax-highlighting pager for git and diff output
+brew "git-delta"
+# Git extension for versioning large files
+brew "git-lfs"
+# Open source programming language to build simple/reliable/efficient software
+brew "go"
+# Multimedia framework for research and academic purposes
+brew "gpac"
+# Improved top (interactive process viewer)
+brew "htop"
+# Highly capable, feature-rich programming language
+brew "perl"
+# Add indentation to LaTeX files
+brew "latexindent"
+# Simple terminal UI for git commands
+brew "lazygit"
+# Java-based project management
+brew "maven"
+# Fast, highly customisable system info script
+brew "neofetch"
+# Ambitious Vim-fork focused on extensibility and agility
+brew "neovim"
+# Tiny, lightning fast, feature-packed file manager
+brew "nnn"
+# Cryptography and SSL/TLS Toolkit
+brew "openssl@1.1"
+# Swiss-army knife of markup format conversion
+brew "pandoc"
+# Execute binaries from Python packages in isolated environments
+brew "pipx"
+# Python version management
+brew "pyenv"
+# Interpreted, interactive, object-oriented programming language
+brew "python@3.10"
+# Interpreted, interactive, object-oriented programming language
+brew "python@3.11"
+# Interpreted, interactive, object-oriented programming language
+brew "python@3.12"
+# Interpreted, interactive, object-oriented programming language
+brew "python@3.9"
+# Generic machine emulator and virtualizer
+brew "qemu"
+# Ruby version manager
+brew "rbenv"
+# Search tool like grep and The Silver Searcher
+brew "ripgrep"
+# 7-Zip is a file archiver with a high compression ratio
+brew "sevenzip"
+# Cross-shell prompt for astronauts
+brew "starship"
+# Formatting tool for reformatting Swift code
+brew "swiftformat"
+# Tool to enforce Swift style and conventions
+brew "swiftlint"
+# Terminal multiplexer
+brew "tmux"
+# Manage complex tmux sessions easily
+brew "tmuxinator"
+# Program that allows you to count code, quickly
+brew "tokei"
+# Watch files and take action when they change
+brew "watchman"
+# Little beautifier tool for xcodebuild
+brew "xcbeautify"
+# Blazing fast terminal file manager written in Rust, based on async I/O
+brew "yazi"
+# Feature-rich command-line audio/video downloader
+brew "yt-dlp"
+# General-purpose lossless data-compression library
+brew "zlib"
+# Shell extension to navigate your filesystem faster
+brew "zoxide"
+# Hookdeck CLI utility
+brew "hookdeck/hookdeck/hookdeck"
+# Automatic tiling window manager similar to xmonad
+cask "amethyst"
+# Tool to flash OS images to SD cards & USB drives
+cask "balenaetcher"
+# Reclaim storage used for Xcode caches
+cask "devcleaner"
+cask "font-iosevka"
+# Kext-less implementation of FUSE
+cask "fuse-t"
+# SSHFS implementation based on FUSE-T
+cask "fuse-t-sshfs"
+# Terminal emulator that uses platform-native UI and GPU acceleration
+cask "ghostty"
+cask "periphery"
+# Xcode Extension for reformatting Swift code
+cask "swiftformat-for-xcode"
+# HTML to PDF renderer
+cask "wkhtmltopdf"
+# OpenJDK distribution from Azul
+cask "zulu@11"

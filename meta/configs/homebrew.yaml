@@ -1,0 +1,4 @@
+- link:
+    $HOME/Brewfile: homebrew/Brewfile
+- shell:
+    - [brew bundle --file=$HOME/Brewfile, Installing Homebrew packages and casks]
