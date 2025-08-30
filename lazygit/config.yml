@@ -56,6 +56,7 @@ gui:
   portraitMode: "auto" # one of 'auto' | 'never' | 'always'
 git:
   paging:
+    pager: delta --dark --paging=never
     colorArg: always
     useConfig: false
   commit:
