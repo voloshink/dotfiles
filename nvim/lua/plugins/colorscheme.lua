@@ -2,7 +2,8 @@ return {
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "tokyonight-moon",
+      -- colorscheme = "tokyonight-moon",
+      colorscheme = "techbase",
     },
   },
   {
@@ -64,4 +65,11 @@ return {
   { "Mofiqul/vscode.nvim" },
   { "jackplus-xyz/binary.nvim" },
   { "ellisonleao/gruvbox.nvim", priority = 1000, config = true, opts = { contrast = "hard" } },
+  {
+    "mcauley-penney/techbase.nvim",
+    config = function(_, _)
+      -- vim.cmd.colorscheme("techbase")
+    end,
+    priority = 1000,
+  },
 }
