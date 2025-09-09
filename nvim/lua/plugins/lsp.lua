@@ -20,6 +20,14 @@ return {
           },
         },
       },
+      eslint = {},
+    },
+    setup = {
+      eslint = function()
+        vim.cmd([[
+          autocmd BufWritePre *.tsx,*.ts,*.jsx,*.js EslintFixAll
+        ]])
+      end,
     },
   },
   -- config = function(_, opts)
