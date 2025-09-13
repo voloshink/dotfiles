@@ -99,6 +99,7 @@ export OBSIDIAN_PERSONAL_VAULT="$OBSIDINA_HOME/personal-vault"
 
 alias lg="lazygit"
 alias vim="nvim"
+alias vimk='NVIM_APPNAME="nvim-kickstart" nvim'
 alias p="pnpm"
 alias ls="eza --icons --classify --group-directories-first --time-style=long-iso --group --color-scale"
 alias lla="ls -la"

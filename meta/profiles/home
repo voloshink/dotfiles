@@ -2,6 +2,7 @@ bin
 git
 homebrew
 nvim
+nvim-kickstart
 tmux
 zsh-home
 zsh
