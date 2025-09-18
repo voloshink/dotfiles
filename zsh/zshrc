@@ -114,6 +114,16 @@ alias ti="tmuxinator"
 alias k="kubectl"
 alias bfast='mvnd -T0.8C clean install -DskipTests -Dverification.skip'
 alias ball='mvnd -T0.5C clean install'
+alias gst="git status"
+alias gsu="git submodule update --init --recursive"
+alias b="brew"
+alias bi="brew install"
+alias bu="brew upgrade"
+alias bs="brew search"
+alias rmf="rm -rf"
+alias ..="cd .."
+alias ...="cd ../.."
+alias ....="cd ../../.."
 
 eval "$(starship init zsh)"
 
