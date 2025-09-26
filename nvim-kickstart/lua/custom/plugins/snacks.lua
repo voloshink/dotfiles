@@ -102,6 +102,13 @@ return {
 			desc = "Find Files",
 		},
 		{
+			"<leader><space>",
+			function()
+				Snacks.picker.files()
+			end,
+			desc = "Find Files",
+		},
+		{
 			"<leader>fg",
 			function()
 				Snacks.picker.git_files()
@@ -401,21 +408,6 @@ return {
 			end,
 			desc = "LSP Workspace Symbols",
 		},
-		-- Other
-		{
-			"<leader>z",
-			function()
-				Snacks.zen()
-			end,
-			desc = "Toggle Zen Mode",
-		},
-		{
-			"<leader>Z",
-			function()
-				Snacks.zen.zoom()
-			end,
-			desc = "Toggle Zoom",
-		},
 		{
 			"<leader>.",
 			function()
@@ -502,24 +494,6 @@ return {
 			end,
 			desc = "Prev Reference",
 			mode = { "n", "t" },
-		},
-		{
-			"<leader>N",
-			desc = "Neovim News",
-			function()
-				Snacks.win({
-					file = vim.api.nvim_get_runtime_file("doc/news.txt", false)[1],
-					width = 0.6,
-					height = 0.6,
-					wo = {
-						spell = false,
-						wrap = false,
-						signcolumn = "yes",
-						statuscolumn = " ",
-						conceallevel = 3,
-					},
-				})
-			end,
 		},
 	},
 	init = function()
