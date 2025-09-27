@@ -17,3 +17,8 @@ map("n", "<leader>qq", "<cmd>qa<cr>", { desc = "Quit All" })
 
 -- windows
 map("n", "<leader>wd", "<C-W>c", { desc = "Delete Window", remap = true })
+
+-- Buffers
+map("n", "<leader>bo", function()
+	Snacks.bufdelete.other()
+end, { desc = "Delete Other Buffers" })
