@@ -29,3 +29,5 @@
 
 [merge]
     conflictStyle = zdiff3
+[coderabbit]
+	machineId = cli/5cedf2533d914bba86014b21ddae6f3b
