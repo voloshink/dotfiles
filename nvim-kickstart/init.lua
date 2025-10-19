@@ -2,6 +2,7 @@ vim.g.mapleader = " "
 vim.g.maplocalleader = " "
 
 vim.g.have_nerd_font = true
+vim.g.disable_autofmt = false
 
 -- [[ Setting options ]]
 -- See `:help vim.o`
@@ -72,6 +73,10 @@ vim.o.scrolloff = 10
 -- instead raise a dialog asking if you wish to save the current file(s)
 -- See `:help 'confirm'`
 vim.o.confirm = true
+
+vim.opt.tabstop = 2 -- Number of spaces tabs count for
+vim.opt.expandtab = true -- Use spaces instead of tabs
+vim.opt.shiftwidth = 2 -- Size of an indent
 
 -- [[ Basic Keymaps ]]
 --  See `:help vim.keymap.set()`
