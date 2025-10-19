@@ -9,8 +9,39 @@ return {
 	config = function()
 		vim.lsp.enable("lua_ls")
 
-		-- 		-- Diagnostic Config
-		-- 		-- See :help vim.diagnostic.Opts
+		-- https://github.com/neovim/nvim-lspconfig/blob/master/doc/configs.md#eslint
+		local base_on_attach = vim.lsp.config.eslint.on_attach
+		vim.lsp.config("eslint", {
+			on_attach = function(client, bufnr)
+				if not base_on_attach then
+					return
+				end
+
+				base_on_attach(client, bufnr)
+				vim.api.nvim_create_autocmd("BufWritePre", {
+					buffer = bufnr,
+					callback = function(event)
+						local eslint_client = vim.lsp.get_clients({ bufnr = event.buf, name = "eslint" })[1]
+						if eslint_client then
+							local diag = vim.diagnostic.get(
+								event.buf,
+								{ namespace = vim.lsp.diagnostic.get_namespace(eslint_client.id) }
+							)
+							if #diag > 0 then
+								vim.cmd("LspEslintFixAll")
+							end
+						end
+					end,
+				})
+			end,
+		})
+		vim.lsp.enable("eslint")
+
+		vim.lsp.config("typescript-tools", {})
+		vim.lsp.enable("typescript-tools")
+
+		-- Diagnostic Config
+		-- See :help vim.diagnostic.Opts
 		vim.diagnostic.config({
 			severity_sort = true,
 			float = { border = "rounded", source = "if_many" },
@@ -203,7 +234,7 @@ return {
 -- 				end
 -- 			end,
 -- 		})
---	
+--
 --
 -- 		-- LSP servers and clients are able to communicate to each other what features they support.
 -- 		--  By default, Neovim doesn't support everything that is in the LSP specification.
