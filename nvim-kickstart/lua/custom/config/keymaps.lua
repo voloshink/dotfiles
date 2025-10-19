@@ -51,5 +51,10 @@ map("n", "]w", diagnostic_goto(true, "WARN"), { desc = "Next Warning" })
 map("n", "[w", diagnostic_goto(false, "WARN"), { desc = "Prev Warning" })
 
 -- terminal
-map({ "n", "t" }, "<c-/>", function() Snacks.terminal() end,
-	{ desc = "Terminal (Root Dir)" })
+map({ "n", "t" }, "<c-/>", function()
+	Snacks.terminal()
+end, { desc = "Terminal (Root Dir)" })
+
+-- commenting
+map("n", "gco", "o<esc>Vcx<esc><cmd>normal gcc<cr>fxa<bs>", { desc = "Add Comment Below" })
+map("n", "gcO", "O<esc>Vcx<esc><cmd>normal gcc<cr>fxa<bs>", { desc = "Add Comment Above" })
