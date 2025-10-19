@@ -58,3 +58,14 @@ end, { desc = "Terminal (Root Dir)" })
 -- commenting
 map("n", "gco", "o<esc>Vcx<esc><cmd>normal gcc<cr>fxa<bs>", { desc = "Add Comment Below" })
 map("n", "gcO", "O<esc>Vcx<esc><cmd>normal gcc<cr>fxa<bs>", { desc = "Add Comment Above" })
+
+-- codebridge
+vim.keymap.set("n", "<leader>ct", ":CodeBridgeTmux<CR>", { desc = "Send file to claude" })
+vim.keymap.set("v", "<leader>ct", ":CodeBridgeTmux<CR>", { desc = "Send selection to claude" })
+
+-- toggle autoformat
+map("n", "<leader>uf", function()
+	vim.g.disable_autofmt = not vim.g.disable_autofmt
+	local status = vim.g.disable_autofmt and "disabled" or "enabled"
+	vim.notify("Autoformat " .. status, vim.log.levels.INFO)
+end, { desc = "Toggle Autoformat" })
