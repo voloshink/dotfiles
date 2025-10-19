@@ -1,5 +1,6 @@
 return {
-	"samir-roy/code-bridge.nvim",
+	-- "samir-roy/code-bridge.nvim",
+	"voloshink/code-bridge.nvim",
 	config = function()
 		require("code-bridge").setup({
 			tmux = {
@@ -11,11 +12,9 @@ return {
 			},
 			interactive = {
 				use_telescope = false, -- don't use telescope for interactive prompts
+				model = "claude-haiku-4-5",
+				-- model = nil,
 			},
 		})
 	end,
-	keys = {
-		{ "<leader>ct", ":CodeBridgeTmux<CR>", desc = "Send file to claude" },
-		{ "<leader>ct", ":CodeBridgeTmux<CR>", desc = "Send selection to claude", mode = "v" },
-	},
 }
