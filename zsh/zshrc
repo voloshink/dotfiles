@@ -124,6 +124,7 @@ alias rmf="rm -rf"
 alias ..="cd .."
 alias ...="cd ../.."
 alias ....="cd ../../.."
+alias claude="$HOME/.claude/local/claude"
 
 eval "$(starship init zsh)"
 
