@@ -40,7 +40,6 @@ return {
 			-- For more advanced Luasnip keymaps (e.g. selecting choice nodes, expansion) see:
 			--    https://github.com/L3MON4D3/LuaSnip?tab=readme-ov-file#keymaps
 
-
 			-- In case i want to support enter for accepting completion
 			--         preset = "enter",
 			--         ["<C-y>"] = { "select_and_accept" },
@@ -78,6 +77,16 @@ return {
 
 		sources = {
 			default = { "lsp", "path", "snippets" },
+			per_filetype = {
+				lua = { inherit_defaults = true, "lazydev" },
+			},
+			providers = {
+				lazydev = {
+					name = "LazyDev",
+					module = "lazydev.integrations.blink",
+					score_offset = 100, -- show at a higher priority than lsp
+				},
+			},
 		},
 
 		snippets = { preset = "luasnip" },
@@ -104,25 +113,6 @@ return {
 					end,
 				},
 				ghost_text = { enabled = true },
-			},
-		},
-	},
-
-	-- lazydev
-	{
-		"saghen/blink.cmp",
-		opts = {
-			sources = {
-				per_filetype = {
-					lua = { inherit_defaults = true, "lazydev" },
-				},
-				providers = {
-					lazydev = {
-						name = "LazyDev",
-						module = "lazydev.integrations.blink",
-						score_offset = 100, -- show at a higher priority than lsp
-					},
-				},
 			},
 		},
 	},
