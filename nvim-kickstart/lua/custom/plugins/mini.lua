@@ -41,4 +41,7 @@ return {
 			markdown = true,
 		},
 	},
+	{
+		"nvim-mini/mini.icons",
+	},
 }
