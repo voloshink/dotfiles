@@ -6,6 +6,9 @@ return {
 		{ "j-hui/fidget.nvim", opts = {} },
 		"saghen/blink.cmp",
 	},
+
+	event = "BufReadPre",
+
 	config = function()
 		vim.lsp.enable("lua_ls")
 
@@ -21,6 +24,7 @@ return {
 				vim.api.nvim_create_autocmd("BufWritePre", {
 					buffer = bufnr,
 					callback = function(event)
+						-- skip running fix all if there is nothing to fix (no diagnostics)
 						local eslint_client = vim.lsp.get_clients({ bufnr = event.buf, name = "eslint" })[1]
 						if eslint_client then
 							local diag = vim.diagnostic.get(
@@ -37,8 +41,58 @@ return {
 		})
 		vim.lsp.enable("eslint")
 
-		vim.lsp.config("typescript-tools", {})
-		vim.lsp.enable("typescript-tools")
+		vim.lsp.config("vtsls", {
+			filetypes = {
+				"javascript",
+				"javascriptreact",
+				"javascript.jsx",
+				"typescript",
+				"typescriptreact",
+				"typescript.tsx",
+			},
+			settings = {
+				-- Enable automatic completion of function call parentheses and parameter placeholders
+				complete_function_calls = true,
+				vtsls = {
+					-- Enable code action to move symbol to separate file
+					enableMoveToFileCodeAction = true,
+					-- Automatically use the TypeScript version from the project's node_modules
+					autoUseWorkspaceTsdk = true,
+					experimental = {
+						-- Maximum character length before inlay hints are truncated (prevents cluttering)
+						maxInlayHintLength = 30,
+						completion = {
+							-- Use server-side fuzzy matching for more accurate and performant completions
+							enableServerSideFuzzyMatch = true,
+						},
+					},
+				},
+				typescript = {
+					-- Automatically update import statements when a file is moved or renamed
+					updateImportsOnFileMove = { enabled = "always" },
+					suggest = {
+						-- Include function call completions with full parameter signatures
+						completeFunctionCalls = true,
+					},
+					inlayHints = {
+						-- Show inferred values for enum members
+						enumMemberValues = { enabled = true },
+						-- Show inferred return types for function expressions and declarations
+						functionLikeReturnTypes = { enabled = true },
+						-- Show parameter names for function calls (literals only to reduce noise)
+						parameterNames = { enabled = "literals" },
+						-- Show inferred parameter types in function signatures
+						parameterTypes = { enabled = true },
+						-- Show inferred types for class property declarations
+						propertyDeclarationTypes = { enabled = true },
+						-- Disable showing types for all variables (can be verbose and cluttering)
+						variableTypes = { enabled = false },
+					},
+				},
+			},
+		})
+
+		vim.lsp.enable("vtsls")
 
 		-- Diagnostic Config
 		-- See :help vim.diagnostic.Opts

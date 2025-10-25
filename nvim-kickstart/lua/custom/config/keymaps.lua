@@ -73,3 +73,17 @@ map("n", "<leader>uf", function()
 	local status = vim.g.disable_autofmt and "disabled" or "enabled"
 	vim.notify("Autoformat " .. status, vim.log.levels.INFO)
 end, { desc = "Toggle Autoformat" })
+
+-- code
+map({ "n", "v" }, "<leader>ca", vim.lsp.buf.code_action, { desc = "Code Action" })
+
+-- Source Action (auto-apply first code action)
+map("n", "<leader>cA", function()
+	vim.lsp.buf.code_action({
+		apply = true,
+		context = {
+			only = { "source" },
+			diagnostics = {},
+		},
+	})
+end, { desc = "Source Action" })
