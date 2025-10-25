@@ -94,6 +94,8 @@ return {
 
 		vim.lsp.enable("vtsls")
 
+		vim.lsp.enable("markdown_oxide")
+
 		-- Diagnostic Config
 		-- See :help vim.diagnostic.Opts
 		vim.diagnostic.config({
