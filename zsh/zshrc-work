@@ -33,3 +33,6 @@ alias ecrAuth="aws ecr get-login-password --region eu-west-1 --profile picnic-ar
 alias pstFormat="picnic-shared-tools/format.sh"
 alias pstPatch="picnic-shared-tools/patch.sh"
 alias pstFull="pstPatch && pstFormat"
+
+export LDFLAGS="-L/opt/homebrew/opt/libffi/lib"
+export CPPFLAGS="-I/opt/homebrew/opt/libffi/include"
