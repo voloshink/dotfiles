@@ -126,6 +126,7 @@ alias ..="cd .."
 alias ...="cd ../.."
 alias ....="cd ../../.."
 alias claude="~/.claude/local/claude"
+alias dockerClean="docker stop $(docker ps -a -q) && docker rm -f $(docker ps -a -q)"
 
 eval "$(starship init zsh)"
 
