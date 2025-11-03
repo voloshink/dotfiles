@@ -1,0 +1,10 @@
+#!/bin/bash
+
+if [ $# -eq 0 ]; then
+    echo "Usage: ai-cmd <command description>"
+    exit 1
+fi
+
+command_description="$*"
+
+claude -p --model "haiku" "respond with a bash command that fulfills the following function, keep your reply brief: ${command_description}"
