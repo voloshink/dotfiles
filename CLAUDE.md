@@ -35,13 +35,18 @@ This repository uses the **Dotbot** configuration management system with a modul
 ### Available Configurations
 
 - **nvim** - LazyVim-based Neovim setup
-- **zsh** - Oh-my-zsh configuration with custom themes
+- **nvim-kickstart** - Alternative Neovim configuration (kickstart.nvim-based)
+- **zsh** - Base Oh-my-zsh configuration
+- **zsh-home** - Oh-my-zsh configuration for home profile
+- **zsh-work** - Oh-my-zsh configuration for work profile
 - **tmux** - Terminal multiplexer with vi bindings
 - **lazygit** - Git TUI configuration
 - **ghostty** - Terminal emulator configuration
 - **xcode** - Xcode themes and settings
 - **ideavimrc** - IntelliJ Vim plugin configuration
 - **tmuxinator** - Tmux session management
+- **git** - Git configuration
+- **homebrew** - Homebrew package manager configuration
 - **bin** - Custom utility scripts
 
 ### Profile Differences
