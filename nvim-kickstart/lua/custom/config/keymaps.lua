@@ -87,3 +87,14 @@ map("n", "<leader>cA", function()
 		},
 	})
 end, { desc = "Source Action" })
+
+-- ESLint Fix All
+map("n", "<leader>cf", function()
+	vim.lsp.buf.code_action({
+		apply = true,
+		context = {
+			only = { "source.fixAll.eslint" },
+			diagnostics = {},
+		},
+	})
+end, { desc = "ESLint Fix All" })
