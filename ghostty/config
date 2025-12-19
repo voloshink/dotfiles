@@ -1,3 +1,4 @@
 #theme = tokyonight_moon
 theme = techbase
 font-family = "Iosevka Term"
+macos-option-as-alt = true
