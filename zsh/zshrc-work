@@ -36,3 +36,6 @@ alias pstFull="pstPatch && pstFormat"
 
 export LDFLAGS="-L/opt/homebrew/opt/libffi/lib"
 export CPPFLAGS="-I/opt/homebrew/opt/libffi/include"
+
+alias androidLint="./gradlew ktlintFormat"
+alias iosLint="./Pods/SwiftLint/swiftlint --fix"
