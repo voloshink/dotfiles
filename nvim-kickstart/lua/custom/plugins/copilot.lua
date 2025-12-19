@@ -1,0 +1,37 @@
+local function ai_accept()
+	local ok, suggestion = pcall(require, "copilot.suggestion")
+	if not ok or not suggestion.is_visible() then
+		return
+	end
+
+	suggestion.accept()
+	return true
+end
+
+return {
+	"zbirenbaum/copilot.lua",
+	cmd = "Copilot",
+	build = ":Copilot auth",
+	event = "BufReadPost",
+	opts = {
+		suggestion = {
+			enabled = true,
+			auto_trigger = false,
+			hide_during_completion = false,
+			keymap = {
+				accept = false, -- handled by nvim-cmp / blink.cmp
+				next = "<M-]>",
+				prev = "<M-[>",
+			},
+		},
+		panel = { enabled = false },
+		filetypes = {
+			markdown = true,
+			help = true,
+		},
+	},
+	config = function(_, opts)
+		require("copilot").setup(opts)
+	end,
+	ai_accept = ai_accept,
+}
