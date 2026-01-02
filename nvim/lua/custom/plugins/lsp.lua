@@ -96,6 +96,8 @@ return {
 
 		vim.lsp.enable("markdown_oxide")
 
+		vim.lsp.enable("jsonls")
+
 		-- Diagnostic Config
 		-- See :help vim.diagnostic.Opts
 		vim.diagnostic.config({
