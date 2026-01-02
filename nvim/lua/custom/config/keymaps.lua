@@ -66,6 +66,8 @@ vim.keymap.set("n", "<leader>cc", ":CodeBridgeChat<CR>", { desc = "Chat with cla
 vim.keymap.set("n", "<leader>cx", ":CodeBridgeWipe<CR>", { desc = "Wipe chat and clear history" })
 vim.keymap.set("n", "<leader>cq", ":CodeBridgeQuery<CR>", { desc = "Query claude with context" })
 vim.keymap.set("v", "<leader>cq", ":CodeBridgeQuery<CR>", { desc = "Query claude with selection" })
+vim.keymap.set("n", "<leader>cD", ":CodeBridgeTmuxDiff<CR>", { desc = "Send git diff to claude" })
+vim.keymap.set("n", "<leader>ce", ":CodeBridgeTmuxDiagnostics<CR>", { desc = "Send diagnostics to claude" })
 
 -- toggle autoformat
 map("n", "<leader>uf", function()
