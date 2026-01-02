@@ -6,7 +6,13 @@
 
 [core]
     excludesfile = ~/.gitignore_global
-    pager = delta
+    # pager = delta
+    editor = nvim
+
+[pager]
+	diff = riff
+	show = riff
+	log = riff
 
 [push]
     default = current
@@ -29,5 +35,15 @@
 
 [merge]
     conflictStyle = zdiff3
+
 [coderabbit]
 	machineId = cli/5cedf2533d914bba86014b21ddae6f3b
+
+[diff]
+  tool = riff
+
+[interactive]
+	diffFilter = riff
+
+[remote "origin"]
+  prune = true
