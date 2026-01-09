@@ -6,6 +6,7 @@
 
 [core]
     excludesfile = ~/.gitignore_global
+    attributesfile = ~/.gitattributes
     # pager = delta
     editor = nvim
 
@@ -34,7 +35,12 @@
     dark = true      # or light = true, or omit for auto-detection
 
 [merge]
-    conflictStyle = zdiff3
+    conflictStyle = diff3
+
+[merge "mergiraf"]
+    name = mergiraf
+    driver = mergiraf merge --git %O %A %B -s %S -x %X -y %Y -p %P -l %L
+
 
 [coderabbit]
 	machineId = cli/5cedf2533d914bba86014b21ddae6f3b

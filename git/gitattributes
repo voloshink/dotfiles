@@ -1,0 +1,150 @@
+# Auto detect text files and normalize line endings to LF
+* text=auto
+
+# Source code
+*.sh text eol=lf
+*.bash text eol=lf
+*.zsh text eol=lf
+
+# Scripts
+*.py text eol=lf merge=mergiraf
+*.rb text eol=lf merge=mergiraf
+*.js text eol=lf merge=mergiraf
+*.jsx text eol=lf merge=mergiraf
+*.mjs text eol=lf merge=mergiraf
+*.ts text eol=lf merge=mergiraf
+*.tsx text eol=lf merge=mergiraf
+
+# Config files
+*.yaml text eol=lf merge=mergiraf
+*.yml text eol=lf merge=mergiraf
+*.json text eol=lf merge=mergiraf
+*.toml text eol=lf merge=mergiraf
+pyproject.toml text eol=lf merge=mergiraf
+*.conf text eol=lf
+*.config text eol=lf
+*.ini text eol=lf merge=mergiraf
+*.properties text eol=lf merge=mergiraf
+
+# Documentation
+*.md text eol=lf merge=mergiraf
+*.txt text eol=lf
+
+# Mergiraf - Structured merge driver for programming languages
+# Java/Kotlin
+*.java text eol=lf merge=mergiraf
+*.kt text eol=lf merge=mergiraf
+
+# Rust
+*.rs text eol=lf merge=mergiraf
+
+# Go
+*.go text eol=lf merge=mergiraf
+go.mod text eol=lf merge=mergiraf
+go.sum text eol=lf merge=mergiraf
+go.work.sum text eol=lf merge=mergiraf
+
+# C/C++
+*.c text eol=lf merge=mergiraf
+*.h text eol=lf merge=mergiraf
+*.cc text eol=lf merge=mergiraf
+*.hh text eol=lf merge=mergiraf
+*.cpp text eol=lf merge=mergiraf
+*.hpp text eol=lf merge=mergiraf
+*.cxx text eol=lf merge=mergiraf
+*.hxx text eol=lf merge=mergiraf
+*.c++ text eol=lf merge=mergiraf
+*.h++ text eol=lf merge=mergiraf
+*.mpp text eol=lf merge=mergiraf
+*.cppm text eol=lf merge=mergiraf
+*.ixx text eol=lf merge=mergiraf
+*.tcc text eol=lf merge=mergiraf
+
+# C#
+*.cs text eol=lf merge=mergiraf
+
+# Dart
+*.dart text eol=lf merge=mergiraf
+
+# Device Tree
+*.dts text eol=lf merge=mergiraf
+
+# Scala
+*.scala text eol=lf merge=mergiraf
+*.sbt text eol=lf merge=mergiraf
+
+# PHP
+*.php text eol=lf merge=mergiraf
+*.phtml text eol=lf merge=mergiraf
+*.php3 text eol=lf merge=mergiraf
+*.php4 text eol=lf merge=mergiraf
+*.php5 text eol=lf merge=mergiraf
+*.phps text eol=lf merge=mergiraf
+*.phpt text eol=lf merge=mergiraf
+
+# Solidity
+*.sol text eol=lf merge=mergiraf
+
+# Lua
+*.lua text eol=lf merge=mergiraf
+
+# Elixir
+*.ex text eol=lf merge=mergiraf
+*.exs text eol=lf merge=mergiraf
+
+# Nix
+*.nix text eol=lf merge=mergiraf
+
+# SystemVerilog
+*.sv text eol=lf merge=mergiraf
+*.svh text eol=lf merge=mergiraf
+
+# Terraform/HCL
+*.hcl text eol=lf merge=mergiraf
+*.tf text eol=lf merge=mergiraf
+*.tfvars text eol=lf merge=mergiraf
+
+# OCaml
+*.ml text eol=lf merge=mergiraf
+*.mli text eol=lf merge=mergiraf
+
+# Haskell
+*.hs text eol=lf merge=mergiraf
+
+# Build systems
+*.mk text eol=lf merge=mergiraf
+Makefile text eol=lf merge=mergiraf
+GNUmakefile text eol=lf merge=mergiraf
+*.bzl text eol=lf merge=mergiraf
+*.bazel text eol=lf merge=mergiraf
+BUILD text eol=lf merge=mergiraf
+WORKSPACE text eol=lf merge=mergiraf
+*.cmake text eol=lf merge=mergiraf
+CMakeLists.txt text eol=lf merge=mergiraf
+
+# HTML/XML
+*.html text eol=lf merge=mergiraf
+*.htm text eol=lf merge=mergiraf
+*.xhtml text eol=lf merge=mergiraf
+*.xml text eol=lf merge=mergiraf
+
+# Archives
+*.zip binary
+*.tar binary
+*.gz binary
+*.tgz binary
+*.7z binary
+
+# Images
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.svg text
+
+# Fonts
+*.ttf binary
+*.otf binary
+*.woff binary
+*.woff2 binary
