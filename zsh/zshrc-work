@@ -12,6 +12,9 @@ export KEYSTORE_UPLOAD_PASSWORD=$(keychain-environment-variable KEYSTORE_UPLOAD_
 export AWS_PROFILE=picnic-artifacts
 export AWS_ACCESS_KEY_ID=$(keychain-environment-variable AWS_ACCESS_KEY_ID);
 export AWS_SECRET_ACCESS_KEY=$(keychain-environment-variable AWS_SECRET_ACCESS_KEY);
+
+export JIRA_API_TOKEN=$(keychain-environment-variable JIRA_API_TOKEN);
+
 alias docker="AWS_PROFILE=picnic-artifacts docker"
 
 alias picnic='cd ~/PicnicSupermarket'
@@ -39,3 +42,5 @@ export CPPFLAGS="-I/opt/homebrew/opt/libffi/include"
 
 alias androidLint="./gradlew ktlintFormat"
 alias iosLint="./Pods/SwiftLint/swiftlint --fix"
+
+alias gradle-clean-cache='(cd android 2>/dev/null && ./gradlew --stop); rm -rf android/{.gradle,.cxx,app/.gradle,app/.cxx,app/build,build} ~/.gradle/caches && echo "✓ Gradle caches cleared"'
