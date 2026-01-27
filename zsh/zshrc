@@ -125,10 +125,10 @@ alias rmf="rm -rf"
 alias ..="cd .."
 alias ...="cd ../.."
 alias ....="cd ../../.."
-alias claude="~/.claude/local/claude"
-alias claudeh="~/.claude/local/claude --model haiku"
-alias claudes="~/.claude/local/claude --model sonnet"
-alias claudio="~/.claude/local/claude --model opus"
+alias claude="~/.local/bin/claude"
+alias claudeh="claude --model haiku"
+alias claudes="claude --model sonnet"
+alias claudio="claude --model opus"
 
 dockerClean() {
   docker stop $(docker ps -a -q) && docker rm -f $(docker ps -a -q)
