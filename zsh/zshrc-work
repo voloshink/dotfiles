@@ -21,6 +21,8 @@ alias docker="AWS_PROFILE=picnic-artifacts docker"
 
 alias picnic='cd ~/PicnicSupermarket'
 
+export PATH="$HOME/PicnicSupermarket/scripts:$PATH"
+
 export PYTHONPATH="~/PicnicSupermarket/picnic-test-automation/automated-tests"
 
 export ANDROID_HOME=$HOME/Library/Android/sdk
