@@ -129,6 +129,7 @@ alias claude="~/.local/bin/claude"
 alias claudeh="claude --model haiku"
 alias claudes="claude --model sonnet"
 alias claudio="claude --model opus"
+alias pi-update="npm install -g @mariozechner/pi-coding-agent --registry https://registry.npmjs.org"
 
 dockerClean() {
   docker stop $(docker ps -a -q) && docker rm -f $(docker ps -a -q)
@@ -206,3 +207,4 @@ function yz() {
 # bun
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
+
