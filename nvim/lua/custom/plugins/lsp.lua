@@ -40,6 +40,7 @@ return {
 			end,
 		})
 		vim.lsp.enable("eslint")
+		vim.lsp.enable("biome")
 
 		vim.lsp.config("vtsls", {
 			filetypes = {

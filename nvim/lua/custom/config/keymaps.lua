@@ -90,13 +90,17 @@ map("n", "<leader>cA", function()
 	})
 end, { desc = "Source Action" })
 
--- ESLint Fix All
+-- Fix All (ESLint or Biome, whichever is active)
 map("n", "<leader>cf", function()
-	vim.lsp.buf.code_action({
-		apply = true,
-		context = {
-			only = { "source.fixAll.eslint" },
-			diagnostics = {},
-		},
-	})
-end, { desc = "ESLint Fix All" })
+	local clients = vim.lsp.get_clients({ bufnr = 0 })
+	local active = {}
+	for _, client in ipairs(clients) do
+		active[client.name] = true
+	end
+
+	if active["biome"] then
+		vim.lsp.buf.code_action({ apply = true, context = { only = { "source.fixAll.biome" }, diagnostics = {} } })
+	elseif active["eslint"] then
+		vim.lsp.buf.code_action({ apply = true, context = { only = { "source.fixAll.eslint" }, diagnostics = {} } })
+	end
+end, { desc = "Fix All (Biome or ESLint)" })
