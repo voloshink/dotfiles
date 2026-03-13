@@ -1,0 +1,13 @@
+# 🐌
+[swift]
+disabled = true
+
+[nodejs]
+detect_files = ["package.json", ".nvmrc", ".node-version"]
+detect_folders = ["node_modules"]
+detect_extensions = []
+
+[python]
+detect_files = ["requirements.txt", "pyproject.toml", "setup.py", "setup.cfg", "Pipfile", ".python-version"]
+detect_folders = [".venv", "venv"]
+detect_extensions = ["py"]
