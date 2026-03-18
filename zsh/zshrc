@@ -145,15 +145,6 @@ case ":$PATH:" in
 esac
 # pnpm end
 
-# Python — add shims to PATH immediately so `python` works, but defer the slow
-# `pyenv init -` shell integration until pyenv is actually invoked
-export PYENV_ROOT="$HOME/.pyenv"
-export PATH="$PYENV_ROOT/bin:$PYENV_ROOT/shims:$PATH"
-pyenv() {
-  unfunction pyenv
-  eval "$(command pyenv init -)"
-  pyenv "$@"
-}
 
 # keychain credentials
 source ~/keychain-environment-variables.sh
