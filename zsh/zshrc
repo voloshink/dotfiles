@@ -161,13 +161,6 @@ alias jdk18="sdk use java 18.0.1.1-open"
 alias jdk21="sdk use java 21.0.2-tem"
 alias bepi="bundle exec pod install"
 
-# Ruby — same lazy pattern: shims work immediately, full shell integration on first use
-export PATH="$HOME/.rbenv/bin:$HOME/.rbenv/shims:$PATH"
-rbenv() {
-  unfunction rbenv
-  eval "$(command rbenv init -)"
-  rbenv "$@"
-}
 
 # Set up fzf key bindings and fuzzy completion
 # eval "$(fzf --zsh)"

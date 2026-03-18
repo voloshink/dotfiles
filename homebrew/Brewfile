@@ -96,8 +96,6 @@ brew "python@3.12"
 brew "python@3.9"
 # Generic machine emulator and virtualizer
 brew "qemu"
-# Ruby version manager
-brew "rbenv"
 # Search tool like grep and The Silver Searcher
 brew "ripgrep"
 # 7-Zip is a file archiver with a high compression ratio
