@@ -50,8 +50,6 @@ brew "unbound"
 brew "gnutls"
 # C library SSHv1/SSHv2 client and server protocols
 brew "libssh"
-# Fast and simple Node.js version manager
-brew "fnm"
 # Command-line fuzzy finder written in Go
 brew "fzf"
 # GitHub command-line tool
