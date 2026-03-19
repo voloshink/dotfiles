@@ -45,4 +45,15 @@ alias pstFull="pstPatch && pstFormat"
 alias androidLint="./gradlew ktlintFormat"
 alias iosLint="./Pods/SwiftLint/swiftlint --fix"
 
+# Always use the project-locked CocoaPods version when a Gemfile is present.
+# Prevents accidental `pod install` with a globally installed version that differs
+# from what Gemfile.lock pins, which would cause Podfile.lock drift.
+pod() {
+  if [[ -f Gemfile || -f ../Gemfile ]]; then
+    bundle exec pod "$@"
+  else
+    command pod "$@"
+  fi
+}
+
 alias gradle-clean-cache='(cd android 2>/dev/null && ./gradlew --stop); rm -rf android/{.gradle,.cxx,app/.gradle,app/.cxx,app/build,build} ~/.gradle/caches && echo "✓ Gradle caches cleared"'
