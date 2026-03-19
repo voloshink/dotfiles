@@ -1,3 +1,4 @@
 - link:
     ~/.tmux.conf: tmux/tmux.conf
     ~/.tmux/picnic-session: tmux/picnic-session
+    ~/.config/tmux/session-switch.sh: tmux/session-switch.sh
