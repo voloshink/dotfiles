@@ -129,6 +129,7 @@ alias claude="~/.local/bin/claude"
 alias claudeh="claude --model haiku"
 alias claudes="claude --model sonnet"
 alias claudio="claude --model opus"
+alias cc="claude --dangerously-skip-permissions"
 alias pi-update="npm install -g @mariozechner/pi-coding-agent --registry https://registry.npmjs.org"
 
 dockerClean() {
