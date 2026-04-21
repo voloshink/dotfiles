@@ -46,10 +46,8 @@ return {
 			filetypes = {
 				"javascript",
 				"javascriptreact",
-				"javascript.jsx",
 				"typescript",
 				"typescriptreact",
-				"typescript.tsx",
 			},
 			settings = {
 				-- Enable automatic completion of function call parentheses and parameter placeholders
