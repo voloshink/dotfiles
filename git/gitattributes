@@ -28,7 +28,6 @@ pyproject.toml text eol=lf merge=mergiraf
 
 # Documentation
 *.md text eol=lf merge=mergiraf
-*.txt text eol=lf
 
 # Mergiraf - Structured merge driver for programming languages
 # Java/Kotlin
