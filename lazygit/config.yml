@@ -226,7 +226,7 @@ keybinding:
     pasteCommits: "V"
     tagCommit: "T"
     checkoutCommit: "<space>"
-    resetCherryPick: "<c-R>"
+    resetCherryPick: "<c-r>"
     openLogMenu: "<c-l>"
     viewBisectOptions: "b"
   stash:
