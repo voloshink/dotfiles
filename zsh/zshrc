@@ -74,10 +74,6 @@ ZSH_THEME="robbyrussell"
 #
 # zsh-autocomplete breaks zoxide atm
 plugins=(git zsh-autosuggestions fast-syntax-highlighting)
-# plugins+=(zsh-vi-mode)
-
-# to prevent breaking fzf keybinds
-ZVM_INIT_MODE=sourcing
 
 export EDITOR="nvim"
 
@@ -87,6 +83,13 @@ zmodload -i zsh/complist
 bindkey '\t' menu-complete "$terminfo[kcbt]" reverse-menu-complete
 # enter to run command from menu directly
 bindkey -M menuselect '\r' .accept-line
+
+# ctrl+g to edit the current command line in $EDITOR (nvim)
+autoload -Uz edit-command-line
+zle -N edit-command-line
+bindkey -M emacs '^g' edit-command-line
+bindkey -M viins '^g' edit-command-line
+bindkey -M vicmd '^g' edit-command-line
 
 source $ZSH/oh-my-zsh.sh
 
