@@ -79,6 +79,9 @@ end, { desc = "Toggle Autoformat" })
 -- code
 map({ "n", "v" }, "<leader>ca", vim.lsp.buf.code_action, { desc = "Code Action" })
 
+-- restart lsp clients
+map("n", "<leader>cR", "<cmd>LspRestart<cr>", { desc = "Restart LSP" })
+
 -- Source Action (auto-apply first code action)
 map("n", "<leader>cA", function()
 	vim.lsp.buf.code_action({

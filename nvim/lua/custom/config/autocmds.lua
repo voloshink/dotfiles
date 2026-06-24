@@ -23,6 +23,60 @@ vim.api.nvim_create_autocmd("FileType", {
 	end,
 })
 
+-- nvim-lspconfig no longer ships the :LspRestart/:LspStart/:LspStop commands,
+-- and servers are launched through vim.lsp.enable(). This recreates a restart
+-- command: stop the relevant clients and re-enable their configs so they
+-- re-attach to the open buffers. With no args it restarts every active client,
+-- otherwise it restarts the named ones (e.g. :LspRestart eslint vtsls).
+vim.api.nvim_create_user_command("LspRestart", function(opts)
+	local names = {}
+	if opts.args ~= "" then
+		for name in opts.args:gmatch("%S+") do
+			names[#names + 1] = name
+		end
+	else
+		for _, client in ipairs(vim.lsp.get_clients()) do
+			names[#names + 1] = client.name
+		end
+	end
+
+	local seen, unique = {}, {}
+	for _, name in ipairs(names) do
+		if not seen[name] then
+			seen[name] = true
+			unique[#unique + 1] = name
+		end
+	end
+
+	if #unique == 0 then
+		vim.notify("No active LSP clients to restart", vim.log.levels.WARN)
+		return
+	end
+
+	for _, name in ipairs(unique) do
+		for _, client in ipairs(vim.lsp.get_clients({ name = name })) do
+			client:stop(true)
+		end
+	end
+
+	vim.defer_fn(function()
+		for _, name in ipairs(unique) do
+			vim.lsp.enable(name)
+		end
+		vim.notify("Restarted LSP: " .. table.concat(unique, ", "), vim.log.levels.INFO)
+	end, 200)
+end, {
+	nargs = "*",
+	desc = "Restart LSP clients",
+	complete = function()
+		local names = {}
+		for _, client in ipairs(vim.lsp.get_clients()) do
+			names[#names + 1] = client.name
+		end
+		return names
+	end,
+})
+
 -- Auto create dir when saving a file, in case some intermediate directory does not exist
 vim.api.nvim_create_autocmd({ "BufWritePre" }, {
 	group = augroup("auto_create_dir"),
