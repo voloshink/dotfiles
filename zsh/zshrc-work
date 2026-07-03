@@ -16,6 +16,8 @@ export AWS_SECRET_ACCESS_KEY=$(keychain-environment-variable AWS_SECRET_ACCESS_K
 export JIRA_API_TOKEN=$(keychain-environment-variable JIRA_API_TOKEN);
 export JIRA_EMAIL="kirill.voloshin@teampicnic.com";
 
+export FIGMA_API_TOKEN=$(keychain-environment-variable FIGMA_API_TOKEN);
+
 # Load the SSH signing key (passphrase stored in the login keychain) into the
 # ssh-agent this shell inherits, so git can SSH-sign commits without prompting.
 ssh-add --apple-load-keychain >/dev/null 2>&1
