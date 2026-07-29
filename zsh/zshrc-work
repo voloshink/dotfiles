@@ -18,6 +18,8 @@ export JIRA_EMAIL="kirill.voloshin@teampicnic.com";
 
 export FIGMA_API_TOKEN=$(keychain-environment-variable FIGMA_API_TOKEN);
 
+export ADJUST_API_KEY=$(keychain-environment-variable ADJUST_API_KEY);
+
 # Load the SSH signing key (passphrase stored in the login keychain) into the
 # ssh-agent this shell inherits, so git can SSH-sign commits without prompting.
 ssh-add --apple-load-keychain >/dev/null 2>&1
