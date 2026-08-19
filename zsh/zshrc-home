@@ -1,1 +1,2 @@
-# empty for now!
+export WANIKANI_API_TOKEN=$(keychain-environment-variable WANIKANI_API_TOKEN)
+export BUNPRO_API_TOKEN=$(keychain-environment-variable BUNPRO_API_TOKEN)
