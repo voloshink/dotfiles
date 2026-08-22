@@ -55,8 +55,8 @@ gui:
   animateExplosion: true # shows an explosion animation when nuking the working tree
   portraitMode: "auto" # one of 'auto' | 'never' | 'always'
 git:
-  pagers:
-    - pager: riff --no-pager
+  diffRenderers:
+    - command: riff --no-pager
       colorArg: always
       useConfig: false
   commit:
