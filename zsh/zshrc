@@ -175,7 +175,7 @@ eval "$(tv init zsh)"
 # the full sdkman-init.sh (which iterates every SDK candidate) until `sdk` is called
 export SDKMAN_DIR="$HOME/.sdkman"
 export JAVA_HOME="$SDKMAN_DIR/candidates/java/current"
-export PATH="$PATH:$JAVA_HOME/bin"
+export PATH="$SDKMAN_DIR/candidates/mvnd/current/bin:$PATH:$JAVA_HOME/bin"
 sdk() {
   unfunction sdk
   [[ -s "$SDKMAN_DIR/bin/sdkman-init.sh" ]] && source "$SDKMAN_DIR/bin/sdkman-init.sh"
