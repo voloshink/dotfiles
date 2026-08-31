@@ -1,4 +1,5 @@
 - link:
     ~/.tmux.conf: tmux/tmux.conf
     ~/.tmux/picnic-session: tmux/picnic-session
+    ~/.tmux/restore-resize.sh: tmux/restore-resize.sh
     ~/.config/tmux/session-switch.sh: tmux/session-switch.sh
