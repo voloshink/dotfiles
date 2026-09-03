@@ -1,7 +1,3 @@
 - link:
     $HOME/.zshrc: zsh/zshrc
-    $HOME/.p10k.zsh: zsh/p10k.zsh
     $HOME/keychain-environment-variables.sh: zsh/keychain-environment-variables.sh
-
-- shell:
-    - [test -d "$HOME/.oh-my-zsh/custom/themes/powerlevel10k" || git clone --depth=1 --branch v1.20.0 https://github.com/romkatv/powerlevel10k.git "$HOME/.oh-my-zsh/custom/themes/powerlevel10k", Installing Powerlevel10k]
