@@ -133,7 +133,6 @@ alias claudeh="claude --model haiku"
 alias claudes="claude --model sonnet"
 alias claudio="claude --model opus"
 alias cc="claude --dangerously-skip-permissions"
-alias pi-update="npm install -g --ignore-scripts @earendil-works/pi-coding-agent@latest --registry https://registry.npmjs.org"
 
 dockerClean() {
   docker stop $(docker ps -a -q) && docker rm -f $(docker ps -a -q)
