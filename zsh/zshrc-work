@@ -44,6 +44,26 @@ export TESTCONTAINERS_RYUK_DISABLED=true
 alias awsAuth="aws sso login --profile picnic-artifacts"
 alias ecrAuth="aws ecr get-login-password --region eu-west-1 --profile picnic-artifacts | docker login --username AWS --password-stdin 008971659647.dkr.ecr.eu-west-1.amazonaws.com"
 
+npmAuth() {
+  local token npmrc="$HOME/.npmrc" tmp
+  local key='//teampicnic-008971659647.d.codeartifact.eu-west-1.amazonaws.com/npm/npm-aggregate/:_authToken'
+  token=$(aws codeartifact get-authorization-token \
+    --profile picnic-artifacts --region eu-west-1 \
+    --domain teampicnic --domain-owner 008971659647 \
+    --query authorizationToken --output text) || return 1
+  [[ -n "$token" && "$token" != None ]] || return 1
+
+  tmp=$(mktemp "$npmrc.XXXXXX") || return 1
+  if CODEARTIFACT_AUTH_TOKEN="$token" awk -v key="$key" '
+    index($0, key "=") != 1 { print }
+    END { print key "=" ENVIRON["CODEARTIFACT_AUTH_TOKEN"] }
+  ' "$npmrc" > "$tmp" && mv -f "$tmp" "$npmrc"; then
+    return 0
+  fi
+  rm -f "$tmp"
+  return 1
+}
+
 alias pstFormat="picnic-shared-tools/format.sh"
 alias pstPatch="picnic-shared-tools/patch.sh"
 alias pstFull="pstPatch && pstFormat"
